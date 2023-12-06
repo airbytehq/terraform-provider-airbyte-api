@@ -16,7 +16,7 @@ resource "airbyte_destination_s3" "my_destination_s3" {
     s3_bucket_path    = "data_sync/test"
     s3_bucket_region  = "ap-southeast-1"
     s3_endpoint       = "http://localhost:9000"
-    s3_path_format    = "${NAMESPACE}/${STREAM_NAME}/${YEAR}_${MONTH}_${DAY}_${EPOCH}_"
+    s3_path_format    = "$${NAMESPACE}/$${STREAM_NAME}/$${YEAR}_$${MONTH}_$${DAY}_$${EPOCH}_"
     secret_access_key = "a012345678910ABCDEFGH/AbCdEfGhEXAMPLEKEY"
   }
   definition_id = "b1d5b002-89a0-4dc0-a329-a5cae9f38884"
