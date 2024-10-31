@@ -101,6 +101,10 @@ provider_installation {
 
 Your `<PATH>` may vary depending on how your Go environment variables are configured. Execute `go env GOBIN` to set it, then set the `<PATH>` to the value returned. If nothing is returned, set it to the default location, `$HOME/go/bin`.
 
+### Running the Example Project
+
+If you just want to see the Terraform provider in action, please see the [example project README](./examples/README.md).
+
 ### Contributions
 
 While we value open-source contributions to this SDK, this library is generated programmatically.
